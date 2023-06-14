@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Skin Disease</string>
+
+    <string name="actinitc_keratosis_definition">Actinic keratosis (AK), sometimes called solar keratosis or senile keratosis, is a pre-cancerous area of thick, scaly, or crusty skin. Actinic keratosis is a disorder (-osis) of epidermal keratinocytes that is induced by ultraviolet (UV) light exposure (actin-). These growths are more common in fair-skinned people and those who are frequently in the sun. They are believed to form when skin gets damaged by UV radiation from the sun or indoor tanning beds, usually over the course of decades. Untreated lesions have up to a 20% risk of progression to squamous cell carcinoma, so treatment by a dermatologist is recommended. </string>
+    <string name="description2">The most common symptoms are:</string>
+    <string name="description2_list">
+        \n<li> A white, scaly plaque of variable thickness with surrounding redness.</li>
+        \n<li> Skin nearby the lesion often shows evidence of solar damage characterized by notable pigmentary alterations, being yellow or pale in color with areas of hyperpigmentation.</li>
+        \n<li> Deep wrinkles, coarse texture, purpura and ecchymoses, dry skin, and scattered telangiectasias are also characteristic.</li>
+    </string>
+
+    <string name="description2_last"> \nThe lesions are usually asymptomatic, but can be tender, itch, bleed, or produce a stinging or burning sensation. AKs are typically graded in accordance with their clinical presentation: Grade I (easily visible, slightly palpable), Grade II (easily visible, palpable), and Grade III (frankly visible and hyperkeratotic).</string>
+    <string name="description3">The most important cause of AK formation is solar radiation, through a variety of mechanisms. Mutation of the p53 tumor suppressor gene, induced by UV radiation, has been identified as a crucial step in AK formation. Similar to UV radiation, higher levels of HPV found in AKs reflect enhanced viral DNA replication.</string>
+    <string name="descrption3_type1">Ultraviolet radiation</string>
+    <string name="description3_type1_descrption">It is thought that ultraviolet (UV) radiation induces mutations in the keratinocytes of the epidermis, promoting the survival and proliferation of these atypical cells. UV radiation has also been shown to cause elevated inflammatory markers such as arachidonic acid, as well as other molecules associated with inflammation. Several predictors for increased AK risk from UV radiation have been identified: </string>
+
+    <string name="description3_list1">
+        \n<li> Extent of sun exposure: Cumulative sun exposure leads to an increased risk for development of AKs. In one U.S. study, AKs were found in 55% of fair-skinned men with high cumulative sun exposure, and in only 19% of fair-skinned men with low cumulative sun exposure in an age-matched cohort (the percents for women in this same study were 37% and 12% respectively). </li>
+        \n<li> History of sunburn: Studies show that even a single episode of painful sunburn as a child can increase an individual\'s risk of developing AK as an adult. Six or more painful sunburns over the course of a lifetime was found to be significantly associated with the likelihood of developing AK.</li>
+    </string>
+
+    <string name="description3_type2">Skin pigmentation</string>
+    <string name="description3_type2_description">Melanin is a pigment in the epidermis that functions to protect keratinocytes from the damage caused by UV radiation; it is found in higher concentrations in the epidermis of darker-skinned individuals, affording them protection against the development of AKs. Phenotypic features seen in fair-skinned individuals that are associated with an increased propensity to develop AKs include:</string>
+    <string name="description3_list2">
+        \n<li> Freckling</li>
+        \n<li> Light hair and eye color</li>
+        \n<li> Propensity to sunburn</li>
+        \n<li> Inability to tan</li>
+    </string>
+    <string name="description4">You are at an increased risk of developing abscesses if: </string>
+    <string name="description4_list1">
+        \n<li> You with fair skin who sunburn easily.</li>
+        \n<li> You have blue, green, or hazel eyes.</li>
+        \n<li> You with having red or blond hair.</li>
+    </string>
+</resources>

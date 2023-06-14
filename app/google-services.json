@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "232774040430",
+    "firebase_url": "https://application-afc37-default-rtdb.firebaseio.com",
+    "project_id": "application-afc37",
+    "storage_bucket": "application-afc37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232774040430:android:72d077f89364e5d05d9f7f",
+        "android_client_info": {
+          "package_name": "com.example.skindisease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232774040430-denupp3a27u4vvsemnbs1i7g342tdj05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlE-qobmZ_rGW1ddpIiV0Zxtk9xJkTcg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232774040430-denupp3a27u4vvsemnbs1i7g342tdj05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

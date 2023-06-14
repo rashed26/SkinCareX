@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_home"
+    android:layout_gravity="center"
+    tools:context=".Information">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:background="@color/teal_200"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/teal_200"
+            android:text="First"
+            android:id="@+id/navigation"/>
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/navigation">
+
+        <TextView
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:text="INFORMATION"
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"/>
+
+
+        <GridLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/grid1"
+            android:layout_below="@+id/title"
+            android:columnCount="1"
+            android:rowCount="5">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_height="265dp"
+                android:layout_width="wrap_content"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="0">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linerLayout1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="130dp"
+                        android:layout_width="280dp"
+                        android:id="@+id/imageView1"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/red"
+                        android:text="Actinic Keratosis"
+                        android:id="@+id/title100"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#8C7D66"
+                        android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                        android:id="@+id/title1"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/red"
+                        android:text="Read more..."
+                        android:id="@+id/title102"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textAlignment="textEnd"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_height="265dp"
+                android:layout_width="wrap_content"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="1">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linerLayout2"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="130dp"
+                        android:layout_width="280dp"
+                        android:id="@+id/imageView2"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/red"
+                        android:text="Actinic Keratosis"
+                        android:id="@+id/title103"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#8C7D66"
+                        android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                        android:id="@+id/title2"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/red"
+                        android:text="Read more..."
+                        android:id="@+id/title104"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textAlignment="textEnd"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_height="265dp"
+                android:layout_width="wrap_content"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="2">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linerLayout3"
+                    android:gravity="center">
+
+                     <ImageView
+                         android:layout_gravity="center_horizontal"
+                         android:layout_height="130dp"
+                         android:layout_width="280dp"
+                         android:id="@+id/imageView3"
+                         android:layout_marginTop="10dp"
+                         android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                         android:scaleType="fitXY"/>
+
+                     <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:textColor="@color/red"
+                         android:text="Actinic Keratosis"
+                         android:id="@+id/title105"
+                         android:layout_marginBottom="10dp"
+                         android:textStyle="bold"
+                         android:layout_marginTop="10dp"
+                         android:textSize="17dp"/>
+
+                     <TextView
+                         android:layout_height="40dp"
+                         android:layout_width="match_parent"
+                         android:textColor="#8C7D66"
+                         android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                         android:id="@+id/title3"
+                         android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/red"
+                        android:text="Read more..."
+                        android:id="@+id/title106"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textAlignment="textEnd"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_height="265dp"
+                android:layout_width="wrap_content"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="3">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linerLayout4"
+                    android:gravity="center">
+
+                     <ImageView
+                         android:layout_gravity="center_horizontal"
+                         android:layout_height="130dp"
+                         android:layout_width="280dp"
+                         android:id="@+id/imageView4"
+                         android:layout_marginTop="10dp"
+                         android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                         android:scaleType="fitXY"/>
+
+                     <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:textColor="@color/red"
+                         android:text="Actinic Keratosis"
+                         android:id="@+id/title107"
+                         android:layout_marginBottom="10dp"
+                         android:textStyle="bold"
+                         android:layout_marginTop="10dp"
+                         android:textSize="17dp"/>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_width="match_parent"
+                            android:textColor="#8C7D66"
+                            android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                            android:id="@+id/title4"
+                            android:textSize="12dp"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/red"
+                            android:text="Read more..."
+                            android:id="@+id/title108"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:textAlignment="textEnd"/>
+
+                     </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="fill"
+                    android:layout_height="265dp"
+                    android:layout_width="wrap_content"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_row="4">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/linerLayout5"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="130dp"
+                            android:layout_width="280dp"
+                            android:id="@+id/imageView5"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                            android:scaleType="fitXY"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/red"
+                            android:text="Actinic Keratosis"
+                            android:id="@+id/title109"
+                            android:layout_marginBottom="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textSize="17dp"/>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_width="match_parent"
+                            android:textColor="#8C7D66"
+                            android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                            android:id="@+id/title5"
+                            android:textSize="12dp"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/red"
+                            android:text="Read more..."
+                            android:id="@+id/title110"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:textAlignment="textEnd"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
