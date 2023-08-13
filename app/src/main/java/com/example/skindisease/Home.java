@@ -1,13 +1,18 @@
 package com.example.skindisease;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,9 +23,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Home extends AppCompatActivity {
 
-
-    ImageView scanImage,historyImage,learnImage,treatmentImage,mapImage,socialImage,logoutImage;
-    TextView scanFirst,scanSecond,historyFirst,historySecond,learnFirst,learnSecond,treatmentFirst,treatmentSecond,mapFirst,mapSecond,socialFirst,socialSecond,logoutFirst,logoutSecond;
+    ImageView scanImage,historyImage,learnImage,treatmentImage,mapImage,socialImage,gsappImage,sassImage;
+    TextView scanFirst,scanSecond,historyFirst,historySecond,learnFirst,learnSecond,treatmentFirst,treatmentSecond,mapFirst,mapSecond,socialFirst,socialSecond,gsappFirst,gsappSecond,sassFirst,sassSecond;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,9 +49,12 @@ public class Home extends AppCompatActivity {
         socialImage=findViewById(R.id.imageView6);
         socialFirst=findViewById(R.id.textView7);
         socialSecond=findViewById(R.id.textView15);
-        logoutImage=findViewById(R.id.imageView7);
-        logoutFirst=findViewById(R.id.textView8);
-        logoutSecond=findViewById(R.id.textView16);
+        gsappImage=findViewById(R.id.imageView7);
+        gsappFirst=findViewById(R.id.textView8);
+        gsappSecond=findViewById(R.id.textView16);
+        sassImage=findViewById(R.id.imageView8);
+        sassFirst=findViewById(R.id.sass);
+        sassSecond=findViewById(R.id.textView17);
 
 
 
@@ -79,21 +86,21 @@ public class Home extends AppCompatActivity {
         historyImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),ProfileActivity.class);
+                Intent intent=new Intent(getApplicationContext(),History.class);
                 startActivity(intent);
             }
         });
         historyFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),ProfileActivity.class);
+                Intent intent=new Intent(getApplicationContext(),History.class);
                 startActivity(intent);
             }
         });
         historySecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),ProfileActivity.class);
+                Intent intent=new Intent(getApplicationContext(),History.class);
                 startActivity(intent);
             }
         });
@@ -180,38 +187,89 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        logoutImage.setOnClickListener(new View.OnClickListener() {
+        gsappImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                Intent i = new Intent(Home.this, MainActivity.class);
-                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(i);
+                Intent intent=new Intent(getApplicationContext(), Gsapp.class);
+                startActivity(intent);
             }
         });
-        logoutFirst.setOnClickListener(new View.OnClickListener() {
+        gsappFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                Intent ii = new Intent(Home.this, MainActivity.class);
-                ii.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(ii);
+                Intent intent=new Intent(getApplicationContext(), Gsapp.class);
+                startActivity(intent);
             }
         });
-        logoutSecond.setOnClickListener(new View.OnClickListener() {
+        gsappSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                FirebaseAuth.getInstance().signOut();
-                Intent iii = new Intent(Home.this, MainActivity.class);
-                iii.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(iii);
+                Intent intent=new Intent(getApplicationContext(), Gsapp.class);
+                startActivity(intent);
+
+            }
+        });
+        sassImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Home.this, Sass.class);
+                startActivity(intent);
+            }
+        });
+        sassFirst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Home.this, Sass.class);
+                startActivity(intent);
+            }
+        });
+        sassSecond.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(Home.this, Sass.class);
+                startActivity(intent);
 
             }
         });
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_main,menu);
+        MenuItem item = menu.findItem(R.id.action_add_post);
+        item.setVisible(false);
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
+        switch (item.getItemId()){
+            case R.id.action_profile:
+                Intent i = new Intent(Home.this, Profile.class);
+                startActivity(i);
+                break;
+            case R.id.action_logout:
+                FirebaseAuth.getInstance().signOut();
+                Intent ii = new Intent(Home.this, MainActivity.class);
+                ii.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(ii);
+                break;
 
+            case R.id.action_rating:
+                Intent iii = new Intent(Home.this, Rating.class);
+                startActivity(iii);
+                break;
+
+            case R.id.action_restApi:
+                Intent iv = new Intent(Home.this, RestApi.class);
+                startActivity(iv);
+                break;
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 
 }

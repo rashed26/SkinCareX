@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -50,7 +51,7 @@ public class CommentPanel extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comment_panel);
-
+        Toast.makeText(this, "Mandatory to upload profile image before post,comment", Toast.LENGTH_SHORT).show();
         edtComment = findViewById(R.id.commentsssssId);
         submitComment = findViewById(R.id.commentBtnId);
         recyclerView = findViewById(R.id.recycleVwComments);
@@ -61,7 +62,7 @@ public class CommentPanel extends AppCompatActivity {
 
         commentRef = FirebaseDatabase.getInstance().getReference().child("Upload").child(postkey).child("Comments");
 //      userRef = FirebaseDatabase.getInstance().getReference().child("Users");
-        userRef = FirebaseDatabase.getInstance().getReference().child("Userprofile");
+        userRef = FirebaseDatabase.getInstance().getReference().child("Users");
 
 
 
@@ -75,8 +76,8 @@ public class CommentPanel extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.exists()){
-                            String userimage = snapshot.child("uimage").getValue().toString();
-                            String username = snapshot.child("uname").getValue().toString();
+                            String userimage = snapshot.child("dp").getValue().toString();
+                            String username = snapshot.child("username").getValue().toString();
                             commenstDetails(username,userimage);
                         }
                     }

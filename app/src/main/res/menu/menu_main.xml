@@ -7,6 +7,12 @@
 
     <item android:id="@+id/action_rating"
         android:title="Rating"/>
+    <item android:id="@+id/action_restApi"
+        android:title="Rest Api"/>
+    <item android:id="@+id/action_profile"
+        android:title="Profile"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_person_24"/>
 
 <!--    <item android:id="@+id/action_search"-->
 <!--        android:title="Search"-->

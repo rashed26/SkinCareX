@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_home"
+    android:background="@drawable/background_last"
     android:layout_gravity="center"
     tools:context=".Information_details">
 
@@ -13,13 +13,7 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent">
 
-        <TextView
-            android:background="@color/teal_200"
-            android:layout_height="50dp"
-            android:layout_width="match_parent"
-            android:textColor="@color/teal_200"
-            android:text="First"
-            android:id="@+id/navigation"/>
+
 
 
         <RelativeLayout
@@ -30,7 +24,7 @@
             android:layout_marginBottom="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_below="@+id/navigation">
+            >
 
 
             <GridLayout
@@ -64,8 +58,7 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="@color/white"
-                            android:text="Actinic Keratosis"
-                            android:id="@+id/title1"
+                            android:id="@+id/diseaseTitle"
                             android:paddingLeft="5dp"
                             android:paddingBottom="20dp"
                             android:paddingTop="20dp"
@@ -75,8 +68,7 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="@color/black"
-                            android:text="What is Actinic Keratosis?"
-                            android:id="@+id/semiTitle1"
+                            android:id="@+id/semiTitleDisease"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"
                             android:paddingLeft="5dp"
@@ -87,8 +79,7 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="#8C7D66"
-                            android:text="@string/actinitc_keratosis_definition"
-                            android:id="@+id/description1"
+                            android:id="@+id/DescriptionDisease"
                             android:layout_marginBottom="20dp"
                             android:paddingLeft="5dp"
                             android:textSize="14dp"/>
@@ -99,7 +90,6 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:layout_gravity="fill"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     app:cardElevation="8dp"
@@ -107,22 +97,24 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     android:layout_column="0"
+                    android:background="@null"
                     android:layout_row="1">
 
 
                     <LinearLayout
+                        android:background="@null"
                         android:orientation="vertical"
+                        android:layout_gravity="center"
                         android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:id="@+id/linerLayout2">
 
                         <ImageView
+                            android:background="@null"
                             android:layout_gravity="center_horizontal"
                             android:layout_height="180dp"
-                            android:layout_width="match_parent"
-                            android:id="@+id/imageView1"
-                            android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
-                            android:scaleType="fitXY"/>
+                            android:layout_width="wrap_content"
+                            android:id="@+id/imageViewDisease" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -151,8 +143,7 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="@color/white"
-                            android:text="Signs and Symptoms"
-                            android:id="@+id/title2"
+                            android:id="@+id/signTitleDisease"
                             android:paddingLeft="5dp"
                             android:paddingBottom="20dp"
                             android:paddingTop="20dp"
@@ -162,30 +153,11 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="#8C7D66"
-                            android:text="@string/description2"
-                            android:id="@+id/description2"
+                            android:id="@+id/signDescription"
                             android:layout_marginTop="10dp"
                             android:paddingLeft="5dp"
                             android:textSize="14dp"/>
 
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/description2_list"
-                            android:id="@+id/description2_list"
-                            android:paddingLeft="5dp"
-                            android:textSize="14dp"/>
-
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/description2_last"
-                            android:id="@+id/description2_last"
-                            android:layout_marginBottom="20dp"
-                            android:paddingLeft="10dp"
-                            android:textSize="14dp"/>
 
                     </LinearLayout>
 
@@ -215,8 +187,7 @@
                              android:layout_height="wrap_content"
                              android:layout_width="match_parent"
                              android:textColor="@color/white"
-                             android:text="Causes of actinic keratosis"
-                             android:id="@+id/title3"
+                             android:id="@+id/CausesDisease"
                              android:paddingLeft="5dp"
                              android:paddingBottom="20dp"
                              android:paddingTop="20dp"
@@ -225,74 +196,10 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="#8C7D66"
-                            android:text="@string/description3"
-                            android:id="@+id/description3"
+                            android:id="@+id/causesDescription"
                             android:layout_marginTop="10dp"
                             android:paddingLeft="5dp"
                             android:textSize="14dp"/>
-
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/descrption3_type1"
-                            android:id="@+id/descrption3_type1"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginEnd="7dp"
-                            android:textStyle="bold"
-                            android:paddingLeft="5dp"
-                            android:textSize="14dp"/>
-
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/description3_type1_descrption"
-                            android:id="@+id/description3_type1_descrption"
-                            android:paddingLeft="5dp"
-                            android:textSize="14dp"/>
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/description3_list1"
-                            android:id="@+id/description3_list1"
-                            android:paddingLeft="5dp"
-                            android:textSize="14dp"
-
-                            />
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/description3_type2"
-                            android:id="@+id/description3_type2"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginEnd="7dp"
-                            android:textStyle="bold"
-                            android:paddingLeft="5dp"
-                            android:textSize="14dp"
-
-                            />
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/description3_type2_description"
-                            android:id="@+id/description3_type2_description"
-                            android:paddingLeft="5dp"
-                            android:textSize="14dp"
-                           />
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/description3_list2"
-                            android:id="@+id/description3_list2"
-                            android:paddingLeft="5dp"
-                            android:textSize="14dp"
-                            android:layout_marginBottom="20dp"
-                            />
 
                     </LinearLayout>
 
@@ -322,8 +229,7 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="@color/white"
-                            android:text="Who's at risk?"
-                            android:id="@+id/title4"
+                            android:id="@+id/riskTitleDisease"
                             android:paddingLeft="5dp"
                             android:paddingBottom="20dp"
                             android:paddingTop="20dp"
@@ -332,21 +238,11 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="#8C7D66"
-                            android:text="@string/description4"
-                            android:id="@+id/description4"
+                            android:id="@+id/riskDescription"
                             android:layout_marginTop="10dp"
                             android:paddingLeft="5dp"
                             android:textSize="14dp"/>
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:textColor="#8C7D66"
-                            android:text="@string/description4_list1"
-                            android:id="@+id/description4_list1"
-                            android:paddingLeft="5dp"
-                            android:textSize="14dp"
-                            android:layout_marginBottom="20dp"
-                            />
+
 
                     </LinearLayout>
 

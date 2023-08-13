@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
        }
 
 
-/*    @Override
+    @Override
     protected void onStart() {
         super.onStart();
         FirebaseUser firebaseUser = mAuth.getCurrentUser();
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
             finish();
         }
-    }*/
+    }
 
     private void session(){
         FirebaseUser firebaseUser = mAuth.getCurrentUser();

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_home"
+    android:background="@drawable/background_last"
     android:layout_gravity="center"
     tools:context=".Information">
 
@@ -13,13 +13,7 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent">
 
-        <TextView
-            android:background="@color/teal_200"
-            android:layout_height="50dp"
-            android:layout_width="match_parent"
-            android:textColor="@color/teal_200"
-            android:text="First"
-            android:id="@+id/navigation"/>
+
 
 
         <RelativeLayout
@@ -29,7 +23,7 @@
             android:layout_marginBottom="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
-            android:layout_below="@+id/navigation">
+            >
 
         <TextView
             android:layout_height="50dp"
@@ -48,10 +42,11 @@
             android:id="@+id/grid1"
             android:layout_below="@+id/title"
             android:columnCount="1"
-            android:rowCount="5">
+            android:rowCount="6">
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/acneInformationCardView"
                 android:layout_gravity="fill"
                 android:layout_height="265dp"
                 android:layout_width="wrap_content"
@@ -78,14 +73,14 @@
                         android:layout_width="280dp"
                         android:id="@+id/imageView1"
                         android:layout_marginTop="10dp"
-                        android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                        android:src="@drawable/acne"
                         android:scaleType="fitXY"/>
 
                     <TextView
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:textColor="@color/red"
-                        android:text="Actinic Keratosis"
+                        android:text="Acne"
                         android:id="@+id/title100"
                         android:layout_marginBottom="10dp"
                         android:textStyle="bold"
@@ -96,7 +91,7 @@
                         android:layout_height="40dp"
                         android:layout_width="match_parent"
                         android:textColor="#8C7D66"
-                        android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                        android:text="Acne is a very common skin condition by comedones (blackheads and whiteheads) and..."
                         android:id="@+id/title1"
                         android:textSize="12dp"/>
 
@@ -117,6 +112,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/actinicInformationCardView"
                 android:layout_gravity="fill"
                 android:layout_height="265dp"
                 android:layout_width="wrap_content"
@@ -161,7 +157,7 @@
                         android:layout_height="40dp"
                         android:layout_width="match_parent"
                         android:textColor="#8C7D66"
-                        android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                        android:text="Actinic keratoses, also known as solar keratosis, are small rough or scaly areas of skin due to damage..."
                         android:id="@+id/title2"
                         android:textSize="12dp"/>
 
@@ -182,6 +178,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/eczemaInformationCardView"
                 android:layout_gravity="fill"
                 android:layout_height="265dp"
                 android:layout_width="wrap_content"
@@ -208,14 +205,14 @@
                          android:layout_width="280dp"
                          android:id="@+id/imageView3"
                          android:layout_marginTop="10dp"
-                         android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                         android:src="@drawable/eczema"
                          android:scaleType="fitXY"/>
 
                      <TextView
                          android:layout_height="wrap_content"
                          android:layout_width="match_parent"
                          android:textColor="@color/red"
-                         android:text="Actinic Keratosis"
+                         android:text="Eczema"
                          android:id="@+id/title105"
                          android:layout_marginBottom="10dp"
                          android:textStyle="bold"
@@ -226,7 +223,7 @@
                          android:layout_height="40dp"
                          android:layout_width="match_parent"
                          android:textColor="#8C7D66"
-                         android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                         android:text="Atopic eczema is an inflammatory condition of the skin. Atopic is the the term used to describe..."
                          android:id="@+id/title3"
                          android:textSize="12dp"/>
 
@@ -247,6 +244,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/nailFungusInformationCardView"
                 android:layout_gravity="fill"
                 android:layout_height="265dp"
                 android:layout_width="wrap_content"
@@ -273,14 +271,14 @@
                          android:layout_width="280dp"
                          android:id="@+id/imageView4"
                          android:layout_marginTop="10dp"
-                         android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                         android:src="@drawable/nailfungus"
                          android:scaleType="fitXY"/>
 
                      <TextView
                          android:layout_height="wrap_content"
                          android:layout_width="match_parent"
                          android:textColor="@color/red"
-                         android:text="Actinic Keratosis"
+                         android:text="Nail Fungus"
                          android:id="@+id/title107"
                          android:layout_marginBottom="10dp"
                          android:textStyle="bold"
@@ -291,7 +289,7 @@
                             android:layout_height="45dp"
                             android:layout_width="match_parent"
                             android:textColor="#8C7D66"
-                            android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                            android:text="Nail fungus is a common infection of the nail. It begins as a white or yellow-brown spot under the...."
                             android:id="@+id/title4"
                             android:textSize="12dp"/>
 
@@ -312,6 +310,7 @@
 
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/psoriasisInformationCardView"
                     android:layout_gravity="fill"
                     android:layout_height="265dp"
                     android:layout_width="wrap_content"
@@ -338,14 +337,14 @@
                             android:layout_width="280dp"
                             android:id="@+id/imageView5"
                             android:layout_marginTop="10dp"
-                            android:src="@drawable/actinic_cheilitis_sq_cell_lip_6"
+                            android:src="@drawable/psoriasis"
                             android:scaleType="fitXY"/>
 
                         <TextView
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:textColor="@color/red"
-                            android:text="Actinic Keratosis"
+                            android:text="Psoriasis"
                             android:id="@+id/title109"
                             android:layout_marginBottom="10dp"
                             android:textStyle="bold"
@@ -356,7 +355,7 @@
                             android:layout_height="45dp"
                             android:layout_width="match_parent"
                             android:textColor="#8C7D66"
-                            android:text="An abscess is a painful collection of pus,usually caused by a backterial infection. Abscesses can..."
+                            android:text="Psoriasis is a common inflammatory skin diseases affecting 2% of the population. It occurs equally..."
                             android:id="@+id/title5"
                             android:textSize="12dp"/>
 
@@ -374,6 +373,71 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seborrheicInformationCardView"
+                android:layout_gravity="fill"
+                android:layout_height="265dp"
+                android:layout_width="wrap_content"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="5">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linerLayout6"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="130dp"
+                        android:layout_width="280dp"
+                        android:id="@+id/imageView6"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/seborrheic"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/red"
+                        android:text="Seborrheic"
+                        android:id="@+id/title111"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:layout_height="45dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#8C7D66"
+                        android:text="Seborrheic (seb-o-REE-ik) dermatitis is a common skin condition that mainly affects your scalp. It..."
+                        android:id="@+id/title6"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/red"
+                        android:text="Read more..."
+                        android:id="@+id/title112"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textAlignment="textEnd"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
             </GridLayout>
 

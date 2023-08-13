@@ -7,17 +7,7 @@
     tools:context=".popUpAddPost"
     android:orientation="vertical">
 
-    <ImageView
-        android:padding="8dp"
-        android:background="#ffffff"
-        android:id="@+id/popup_user_image"
-        android:layout_width="48dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/popup_description"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/popup_title"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+
 
     <EditText
         android:inputType="textMultiLine"
@@ -27,7 +17,6 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Title"
-        app:layout_constraintEnd_toStartOf="@+id/popup_user_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

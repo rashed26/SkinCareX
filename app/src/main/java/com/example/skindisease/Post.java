@@ -53,9 +53,11 @@ public class Post extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_review);
 
+        Toast.makeText(this, "Mandatory to upload profile image before post,comment", Toast.LENGTH_SHORT).show();
+
         imgname= (EditText)findViewById(R.id.title);
 
-        pickImage= (Button)findViewById(R.id.selectId);
+
         upload = (Button)findViewById(R.id.uploadId);
 
         imageView = (ImageView)findViewById(R.id.imageId);
@@ -65,7 +67,7 @@ public class Post extends AppCompatActivity {
 
 
         //In order to show username
-        userRef = FirebaseDatabase.getInstance().getReference().child("Userprofile");
+        userRef = FirebaseDatabase.getInstance().getReference().child("Users");
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         final String userId = user.getUid();
 
@@ -79,7 +81,7 @@ public class Post extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.exists()){
-                            String username = snapshot.child("uname").getValue().toString();
+                            String username = snapshot.child("username").getValue().toString();
                             saveData(username);
                         }
                     }
@@ -103,7 +105,7 @@ public class Post extends AppCompatActivity {
 
 
 
-        pickImage.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showFileChooser();

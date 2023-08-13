@@ -290,7 +290,7 @@ public class Register extends AppCompatActivity {
                 String typedEmail = String.valueOf(s);
 
                 if (!typedEmail.matches(emailPattern)) {
-                    Toast.makeText(Register.this, "Invalid Email", Toast.LENGTH_SHORT).show();
+                    email.setError("Invalid Email");
                 }
 
             }
@@ -419,6 +419,11 @@ public class Register extends AppCompatActivity {
                                     }
 
                             });
+
+
+                    FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                            .child("dp").setValue("-");
+
                 }
 
 
@@ -460,7 +465,7 @@ public class Register extends AppCompatActivity {
         String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
         if (!email1.matches(emailPattern)) {
-            Toast.makeText(Register.this, "Invalid Email", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(Register.this, "Invalid Email", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;

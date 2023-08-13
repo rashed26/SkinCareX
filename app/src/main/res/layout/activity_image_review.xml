@@ -27,7 +27,7 @@
 
         <ImageView
             android:id="@+id/imageId"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/background7"
             android:layout_gravity="center"
             android:layout_width="300dp"
             android:layout_height="250dp">
@@ -42,15 +42,7 @@
 
         </EditText>
 
-        <Button
-            android:id="@+id/selectId"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Select Image"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content">
 
-        </Button>
 
         <Button
             android:id="@+id/uploadId"
@@ -58,7 +50,10 @@
             android:text="Upload"
             android:layout_gravity="center"
             android:layout_width="300dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            >
 
         </Button>
 

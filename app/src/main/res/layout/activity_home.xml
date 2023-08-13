@@ -5,54 +5,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_home"
+    android:background="#1DB7AE"
     android:layout_gravity="center"
     android:orientation="vertical"
     tools:context=".Home">
 
 
+     <LinearLayout
+         android:background="@color/white"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textColor="#0000FF"
-        android:text="Hello Patient,"
-        android:id="@+id/title"
-        android:layout_marginTop="30dp"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold" />
+         android:id="@+id/animation">
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textColor="#FFFFFF"
-        android:text="How can we"
-        android:id="@+id/title2"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:layout_below="@id/title"/>
+         <com.airbnb.lottie.LottieAnimationView
+             android:layout_width="match_parent"
+             android:layout_height="220dp"
+             app:lottie_rawRes="@raw/testing"
+             app:lottie_autoPlay="true"
+             app:lottie_loop="true"
+         />
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textColor="#fff"
-        android:text="help you?"
-        android:id="@+id/title3"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:layout_below="@+id/title2"
-        android:layout_marginBottom="80dp"/>
-
+     </LinearLayout>
 
      <GridLayout
          android:background="@color/white"
          android:layout_height="match_parent"
          android:layout_width="match_parent"
          android:id="@+id/grid1"
-         android:layout_below="@+id/title3"
+         android:layout_below="@+id/animation"
          android:columnCount="2"
          android:rowCount="4">
 
@@ -353,7 +336,7 @@
                      android:layout_height="wrap_content"
                      android:layout_width="wrap_content"
                      android:textColor="@color/teal_200"
-                     android:text="More acknowledgement"
+                     android:text="Share your experience"
                      android:id="@+id/textView15"
                      android:textSize="15sp"
                      android:textStyle="bold"
@@ -387,12 +370,12 @@
                      android:layout_height="wrap_content"
                      android:layout_width="wrap_content"
                      android:id="@+id/imageView7"
-                     android:src="@drawable/ic_baseline_fmd_good_24"/>
+                     android:src="@drawable/ic_baseline_animation_24"/>
 
                  <TextView
                      android:layout_height="wrap_content"
                      android:layout_width="wrap_content"
-                     android:text="Log out"
+                     android:text="Gsapp"
                      android:id="@+id/textView8"
                      android:textSize="25sp"
                      android:textStyle="bold"
@@ -402,7 +385,7 @@
                      android:layout_height="wrap_content"
                      android:layout_width="wrap_content"
                      android:textColor="@color/teal_200"
-                     android:text="Find your location"
+                     android:text="Explore your idea"
                      android:id="@+id/textView16"
                      android:textSize="15sp"
                      android:textStyle="bold"
@@ -439,13 +422,13 @@
                      android:layout_height="wrap_content"
                      android:layout_width="wrap_content"
                      android:id="@+id/imageView8"
-                     android:src="@drawable/ic_baseline_assignment_ind_24"/>
+                     android:src="@drawable/ic_baseline_local_phone_24"/>
 
                  <TextView
                      android:layout_height="wrap_content"
                      android:layout_width="wrap_content"
-                     android:text="Social"
-                     android:id="@+id/textView9"
+                     android:text="Doctor's Info"
+                     android:id="@+id/sass"
                      android:textSize="25sp"
                      android:textStyle="bold"
                      android:textAlignment="center"/>
@@ -454,7 +437,7 @@
                      android:layout_height="wrap_content"
                      android:layout_width="wrap_content"
                      android:textColor="@color/teal_200"
-                     android:text="More acknowledgement"
+                     android:text="Find advice from doctors"
                      android:id="@+id/textView17"
                      android:textSize="15sp"
                      android:textStyle="bold"

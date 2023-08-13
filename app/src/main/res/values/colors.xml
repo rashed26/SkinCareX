@@ -15,5 +15,7 @@
     <color name="colorPrimary">#FF018786</color>
     <color name="colorPrimaryDark">#FF000000</color>
     <color name="colorAccent">#FFBB86FC</color>
+    <color name="colorTrendingEnd">#96C93D</color>
+    <color name="colorTrendingStart">#00B09B</color>
 
 </resources>

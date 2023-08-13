@@ -143,6 +143,14 @@
             android:layout_height="wrap_content">
 
         </ImageView>
+        <TextView
+            android:id="@+id/commentshow"
+            android:text=" Comments"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
 
     </LinearLayout>
 
